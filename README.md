@@ -39,7 +39,7 @@ Detailed EDA to further understand the characteristics and correlations of the f
 ### Modeling
 #### Feature Selection
 <p align='justify' style="font-weight: bold;">
-We select the features used in the model building based on evidence in detailed EDA and also on the basis of domain knowledge.
+We select the features used in the model building based on evidence in detailed EDA and also on the basis of domain knowledge. We will make 2 model, the first model will become the base model and the second model is an updated version from the first model.
 </p>
 
 #### Base Model
@@ -49,7 +49,7 @@ We select the features used in the model building based on evidence in detailed 
 
 #### Model Improvement
 <p align='justify' style="font-weight: bold;">
-
+There are some changes in this model, we are redefine, simplify, and doing extracting from the base feature which used at the base model.
 </p>
 
 ## Conclusion
