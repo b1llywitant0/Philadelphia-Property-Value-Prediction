@@ -1,4 +1,7 @@
-# Philadelphia Property Value Prediction
+# AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject
+## Philadelphia Property Value Prediction
+### By: Billy Witanto, Muhammad Rivaldi Prabowo, Vinsensia Fresian Meiliana
+Data Source: https://www.kaggle.com/adebayo/philadelphia-buildings-database
 <p align='justify' style="font-weight: bold;">
 These notebooks serve as the final project of Job Connector-Data Science and Machine Learning program at Purwadhika Start-up and Coding School.
 </p>
