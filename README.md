@@ -49,6 +49,7 @@ In building process, we use linear regression, random forest regression and xgbo
 ## Results
 
 ### Base Model
+<a href="https://github.com/PurwadhikaDev/AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject/blob/main/Supervised%20Modelling-Regression%20(1).ipynb">Jupyter</a>
 
 #### Model Selection with Cross-Validation
 <p align="center">
@@ -67,6 +68,8 @@ From the result above, the model was able to predict the test data nicely with M
 </p>
 
 ### Model Improvement with Feature Engineering
+<a href="https://github.com/PurwadhikaDev/AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject/blob/main/Supervised%20Modelling-Regression%20(2).ipynb">Jupyter</a>
+
 
 #### Model Selection with Cross-Validation
 <p align="center">
