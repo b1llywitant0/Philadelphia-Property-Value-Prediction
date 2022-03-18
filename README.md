@@ -85,9 +85,15 @@ From the result above, based on the MAPE value, the feature engineering didn't i
 </p>
 
 ## Analysis
+<p align='justify' style="font-weight: bold;">
 
-## Limitation
+</p>
 
+## Limitations
+<p align='justify' style="font-weight: bold;">
+
+</p>
+  
 ## Conclusion
 <p align='justify' style="font-weight: bold;">
 From the model performance, we conclude that the property agent can use this model to predict the market value of properties in Philadelphia based on their characteristics and location. Even though that this model can't determine the sentimental/historical value of a property, we hope that this model can objectively and closely match the market value made by a professional property appraiser, thus reducing the cost of property appraisal. By using this model, we also hope that the justified market value can improve the success in property transaction between saler and buyer. 
