@@ -36,16 +36,17 @@ First, we pick columns which informative enough to help us fill the missing valu
 Detailed EDA to further understand the characteristics and correlations of the features and label to determine the proper preprocessing of the data. This section will also help us in gaining insights about feature engineering. <a href="https://github.com/PurwadhikaDev/AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject/blob/main/2.%20Detailed%20EDA.ipynb">Jupyter</a>
 </p>
 
-### Modeling
-We will make 2 modelling, the first modelling will become the base version and the second modelling is an updated version from the first model. Every modelling will use three model:
-  1. Linear Regression
-  2. Random Forest Regressor
-  3. XGBoost Regressor
-#### Feature Selection
+### Feature Selection
 <p align='justify' style="font-weight: bold;">
-We select the features used in the model building based on evidence in detailed EDA and also on the basis of domain knowledge. 
+We select the features that will be used in the model building based on evidence in detailed EDA and also on the basis of domain knowledge. 
 </p>
 
+### Modeling
+<p align='justify' style="font-weight: bold;">
+In building process, we use linear regression, random forest regression and xgboost regression as potential models. First, we made a base model without any feature engineering, with only handling contextual outliers. In the second improved model, we include feature engineering. In each model, we select the best model based on MAPE (mean absolute percentage error) and also considering its standard deviation. After that, we will use the best model to predict the test data. Then, comparing the predicted value with the actual value of property to evaluate our prediction model.
+</p>
+
+## Result
 #### Base Model
 <p align='justify' style="font-weight: bold;">
 
