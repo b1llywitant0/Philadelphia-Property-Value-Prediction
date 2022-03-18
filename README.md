@@ -94,23 +94,8 @@ From the result above, based on the MAPE value, the feature engineering didn't i
 1. Since the data are enormous, the process of random forest regression was taking too much time. When trying to improve the model with hyperparameter tuning, our computational power are not enough. Our suggestion for this problem is whether to explore other unconvential model that may work faster with comparable performance with random forest or use device with more computational power.
 </p>
 <p align='justify' style="font-weight: bold;">
-2. Our model can only predict market values of properties in range of 6800-1.4799*1e8, with range of numerical values:
+2. Our model can only predict market values of properties in range of 6800-1.4799*1e8, with range of numerical values: a.) Total livable area: 0 - 798189; b.) Total area: 600 - 99964; c.) Number stories: 0 - 40; d.) Number rooms: 0 - 154; e.) Number bedrooms: 0 - 93; f.) Number bathrooms: 0 - 84; g.) Year built: 1652 - 2020; h.) Sale year: 1918 - 2020.  
 </p>
-a. Total livable area: 0 - 798189;  
-</p>
-b. Total area: 600 - 99964;  
-</p>
-c. Number stories: 0 - 40;  
-</p>
-d. Number rooms: 0 - 154;  
-</p>
-e. Number bedrooms: 0 - 93;  
-</p>
-f. Number bathrooms: 0 - 84;  
-</p>
-g. Year built: 1652 - 2020;  
-</p>
-h. Sale year: 1918 - 2020.  
 
 ## Conclusion
 <p align='justify' style="font-weight: bold;">
