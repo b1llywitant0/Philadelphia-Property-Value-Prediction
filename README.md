@@ -47,15 +47,44 @@ In building process, we use linear regression, random forest regression and xgbo
 </p>
 
 ## Results
+
 ### Base Model
-<p align='justify' style="font-weight: bold;">
 
+#### Model Selection with Cross-Validation
+<p align="center">
+<img src="https://github.com/PurwadhikaDev/AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject/blob/main/Pictures/Crossvalidation%20Base%20Model.png">
+</p>
+<p align='justify' style="font-weight: bold;">
+From the result above, it is not suprising for linear regression to have MAPE around 85% since the outliers in the data really exists. With slightly lower standard deviation than linear regression, XGBoost regression have MAPE around 34% which is still not good enough. <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119199885.app1">Reference</a> Random forest regressor proved to be the best model with good MAPE (14.475%) and the lowest standard deviation (0.00447) compared to two other models. Thus, we will use random forest model to predict the test data.
+</p>
+  
+#### Predicting Test Data
+<p align="center">
+<img src="https://github.com/PurwadhikaDev/AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject/blob/main/Pictures/Base%20Model%20Test%20Evaluation.png">
+</p>
+<p align='justify' style="font-weight: bold;">
+From the result above, the model was able to predict the test data nicely with MAPE of 13.18%. MAPE below 10% indicating an excellent accuracy of the prediction model, while 10-20% indicating a good accuracy. <a href="https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119199885.app1">Reference</a> Can we improve the model?
 </p>
 
-### Model Improvement
-<p align='justify' style="font-weight: bold;">
-There are some changes in this model, we are redefine, simplify, and doing extracting from the base feature which used at the base model.
+### Model Improvement with Feature Engineering
+
+#### Model Selection with Cross-Validation
+<p align="center">
+<img src="https://github.com/PurwadhikaDev/AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject/blob/main/Pictures/Crossvalidation%20Model%202.png">
 </p>
+<p align='justify' style="font-weight: bold;">
+After adding and removing certain features, the MAPE of random forest regressor is increased by little, but still comparable to the model before (14.58%).
+</p>
+
+#### Predicting Test Data
+<p align="center">
+<img src="https://github.com/PurwadhikaDev/AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject/blob/main/Pictures/Model%202%20Test%20Evaluation.png">
+</p>
+<p align='justify' style="font-weight: bold;">
+From the result above, based on the MAPE value, the feature engineering didn't improve the model (13.35%). However, it's important to note that in this step, we dropped building code description with more than 400 unique values (that probably explain why the previous model better than this one). But since the difference is only 0.17%, we can say that there's no change in the quality of the model. However, it is also important to note that the goodness of fit of this model is better than the previous model, it is more representable to the test data. Also, there is a reduction in MSE that probably because improvement in the features used reducing the effect of outliers.
+</p>
+
+## Analysis
 
 ## Conclusion
 <p align='justify' style="font-weight: bold;">
