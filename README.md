@@ -89,11 +89,22 @@ From the result above, based on the MAPE value, the feature engineering didn't i
 
 </p>
 
-## Limitations
+## Limitations and Suggestions
 <p align='justify' style="font-weight: bold;">
-
+1. Since the data are enormous, the process of random forest regression was taking too much time. When trying to improve the model with hyperparameter tuning, our computational power are not enough. Our suggestion for this problem is whether to explore other unconvential model that may work faster with comparable performance with random forest or use device with more computational power.
 </p>
-  
+<p align='justify' style="font-weight: bold;">
+2. Our model can only predict market values of properties in range of 6800-1.4799*1e8, with range of numerical values:
+</p>
+1. Total livable area: 0 - 798189;  
+2. Total area: 600 - 99964;  
+3. Number stories: 0 - 40;  
+4. Number rooms: 0 - 154;  
+5. Number bedrooms: 0 - 93;  
+6. Number bathrooms: 0 - 84;  
+7. Year built: 1652 - 2020;  
+8. Sale year: 1918 - 2020.  
+
 ## Conclusion
 <p align='justify' style="font-weight: bold;">
 From the model performance, we conclude that the property agent can use this model to predict the market value of properties in Philadelphia based on their characteristics and location. Even though that this model can't determine the sentimental/historical value of a property, we hope that this model can objectively and closely match the market value made by a professional property appraiser, thus reducing the cost of property appraisal. By using this model, we also hope that the justified market value can improve the success in property transaction between saler and buyer. 
