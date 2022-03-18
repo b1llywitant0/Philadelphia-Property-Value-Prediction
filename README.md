@@ -37,9 +37,13 @@ Detailed EDA to further understand the characteristics and correlations of the f
 </p>
 
 ### Modeling
+We will make 2 modelling, the first modelling will become the base version and the second modelling is an updated version from the first model. Every modelling will use three model:
+  1. Linear Regression
+  2. Random Forest Regressor
+  3. XGBoost Regressor
 #### Feature Selection
 <p align='justify' style="font-weight: bold;">
-We select the features used in the model building based on evidence in detailed EDA and also on the basis of domain knowledge. We will make 2 model, the first model will become the base model and the second model is an updated version from the first model.
+We select the features used in the model building based on evidence in detailed EDA and also on the basis of domain knowledge. 
 </p>
 
 #### Base Model
