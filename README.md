@@ -84,11 +84,6 @@ After adding and removing certain features, the MAPE of random forest regressor 
 From the result above, based on the MAPE value, the feature engineering didn't improve the model (13.35%). However, it's important to note that in this step, we dropped building code description with more than 400 unique values (that probably explain why the previous model better than this one). But since the difference is only 0.17%, we can say that there's no change in the quality of the model. However, it is also important to note that the goodness of fit of this model is better than the previous model, it is more representable to the test data. Also, there is a reduction in MSE that probably because improvement in the features used reducing the effect of outliers.
 </p>
 
-## Analysis
-<p align='justify' style="font-weight: bold;">
-
-</p>
-
 ## Limitations and Suggestions
 <p align='justify' style="font-weight: bold;">
 1. Since the data are enormous, the process of random forest regression was taking too much time. When trying to improve the model with hyperparameter tuning, our computational power are not enough. Our suggestion for this problem is whether to explore other unconvential model that may work faster with comparable performance with random forest or use device with more computational power.
