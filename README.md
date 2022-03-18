@@ -34,7 +34,7 @@ First, we pick columns which informative enough to help us fill the missing valu
 ### Detailed EDA
 <p align='justify' style="font-weight: bold;">
 Detailed EDA to further understand the characteristics and correlations of the features and label to determine the proper preprocessing of the data. This section will also help us in gaining insights about feature engineering. <a href="https://github.com/PurwadhikaDev/AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject/blob/main/2.%20Detailed%20EDA.ipynb">Jupyter</a>
-href="https://public.tableau.com/views/FinalProjectPurwadhika/MarketValuebyYear?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">Tableau</a>
+<a href="https://public.tableau.com/views/FinalProjectPurwadhika/MarketValuebyYear?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">Tableau</a>
 </p>
 
 ### Feature Selection
