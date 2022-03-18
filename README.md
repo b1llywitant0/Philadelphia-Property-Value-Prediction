@@ -43,7 +43,7 @@ We select the features that will be used in the model building based on evidence
 
 ### Modeling
 <p align='justify' style="font-weight: bold;">
-In building process, we use linear regression, random forest regression and xgboost regression as potential models. First, we made a base model without any feature engineering, with only handling contextual outliers. In the second improved model, we include feature engineering. In each model, we select the best model based on MAPE (mean absolute percentage error) and also considering its standard deviation. After that, we will use the best model to predict the test data. Then, comparing the predicted value with the actual value of property to evaluate our prediction model.
+In building process, we use linear regression, random forest regression and xgboost regression as potential models. First, we made a base model without any feature engineering, with only handling contextual outliers. In the second improved model, we include feature engineering. In each model, we select the best model based on MAPE (mean absolute percentage error) and also considering its standard deviation. After that, we will use the best model to predict the test data. Then, comparing the predicted value with the actual value of property to evaluate our prediction model. The model will be improved as necessary.
 </p>
 
 ## Results
