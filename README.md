@@ -96,14 +96,21 @@ From the result above, based on the MAPE value, the feature engineering didn't i
 <p align='justify' style="font-weight: bold;">
 2. Our model can only predict market values of properties in range of 6800-1.4799*1e8, with range of numerical values:
 </p>
-1. Total livable area: 0 - 798189;  
-2. Total area: 600 - 99964;  
-3. Number stories: 0 - 40;  
-4. Number rooms: 0 - 154;  
-5. Number bedrooms: 0 - 93;  
-6. Number bathrooms: 0 - 84;  
-7. Year built: 1652 - 2020;  
-8. Sale year: 1918 - 2020.  
+a. Total livable area: 0 - 798189;  
+</p>
+b. Total area: 600 - 99964;  
+</p>
+c. Number stories: 0 - 40;  
+</p>
+d. Number rooms: 0 - 154;  
+</p>
+e. Number bedrooms: 0 - 93;  
+</p>
+f. Number bathrooms: 0 - 84;  
+</p>
+g. Year built: 1652 - 2020;  
+</p>
+h. Sale year: 1918 - 2020.  
 
 ## Conclusion
 <p align='justify' style="font-weight: bold;">
