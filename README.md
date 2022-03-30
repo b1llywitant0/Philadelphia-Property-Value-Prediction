@@ -82,7 +82,7 @@ After adding and removing certain features, the MAPE of random forest regressor 
 
 #### Predicting Test Data
 <p align="center">
-<img src="https://github.com/b1llywitant0/Philadelphia-Property-Value-Prediction/blob/main/Pictures/Model%202%20Test%20Evaluation.png">
+<img src="https://github.com/b1llywitant0/Philadelphia-Property-Value-Prediction/blob/main/Pictures/Model%202%20Test%20Evaluation.png"> 
 </p>
 <p align='justify' style="font-weight: bold;">
 From the result above, based on the MAPE value, the feature engineering didn't improve the model (13.35%). However, it's important to note that in this step, we dropped building code description with more than 400 unique values (that probably explain why the previous model better than this one). But since the difference is only 0.17%, we can say that there's no change in the quality of the model. However, it is also important to note that the goodness of fit of this model is better than the previous model, it is more representable to the test data. Also, there is a reduction in MSE that probably because improvement in the features used reducing the effect of outliers.
