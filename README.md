@@ -28,12 +28,12 @@ With such an enormous dataset with a lot of columns and rows, we first need to k
 
 ### Data Cleaning
 <p align='justify' style="font-weight: bold;">
-First, we pick columns which informative enough to help us fill the missing value and anomalies in the dataset based on its description. Thus, reducing the columns. Then, initial exploratory data analysis (EDA) was performed to match the column description with the data, also to detect and correcting missing values and anomalies. Furthermore, after correcting missing values, this section resulting in clean dataset, free from missing values. <a href="https://github.com/PurwadhikaDev/AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject/blob/main/1.%20Background%20and%20Data%20Cleaning.ipynb">Jupyter</a>
+First, we pick columns which informative enough to help us fill the missing value and anomalies in the dataset based on its description. Thus, reducing the columns. Then, initial exploratory data analysis (EDA) was performed to match the column description with the data, also to detect and correcting missing values and anomalies. Furthermore, after correcting missing values, this section resulting in clean dataset, free from missing values. <a href="https://github.com/b1llywitant0/Philadelphia-Property-Value-Prediction/blob/main/1.%20Background%20and%20Data%20Cleaning.ipynb">Jupyter</a>
 </p>
 
 ### Detailed EDA
 <p align='justify' style="font-weight: bold;">
-Detailed EDA to further understand the characteristics and correlations of the features and label to determine the proper preprocessing of the data. This section will also help us in gaining insights about feature engineering. <a href="https://github.com/PurwadhikaDev/AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject/blob/main/2.%20Detailed%20EDA.ipynb">Jupyter</a>
+Detailed EDA to further understand the characteristics and correlations of the features and label to determine the proper preprocessing of the data. This section will also help us in gaining insights about feature engineering. <a href="https://github.com/b1llywitant0/Philadelphia-Property-Value-Prediction/blob/main/2.%20Detailed%20EDA.ipynb">Jupyter</a>
 <a href="https://public.tableau.com/views/FinalProjectPurwadhika/MarketValuebyYear?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">Tableau Vizualization</a>
 </p>
 
@@ -50,7 +50,7 @@ In building process, we use linear regression, random forest regression and xgbo
 ## Results
 
 ### Base Model
-<a href="https://github.com/PurwadhikaDev/AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject/blob/main/Supervised%20Modelling-Regression%20(1).ipynb">Jupyter</a>
+<a href="https://github.com/b1llywitant0/Philadelphia-Property-Value-Prediction/blob/main/Supervised%20Modelling-Regression%20(1).ipynb">Jupyter</a>
 
 #### Model Selection with Cross-Validation
 <p align="center">
@@ -69,12 +69,12 @@ From the result above, the model was able to predict the test data nicely with M
 </p>
 
 ### Model Improvement with Feature Engineering
-<a href="https://github.com/PurwadhikaDev/AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject/blob/main/Supervised%20Modelling-Regression%20(2).ipynb">Jupyter</a>
+<a href="https://github.com/b1llywitant0/Philadelphia-Property-Value-Prediction/blob/main/Supervised%20Modelling-Regression%20(2)%20(1).ipynb">Jupyter</a>
 
 
 #### Model Selection with Cross-Validation
 <p align="center">
-<img src="https://github.com/PurwadhikaDev/AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject/blob/main/Pictures/Crossvalidation%20Model%202.png">
+<img src="https://github.com/b1llywitant0/Philadelphia-Property-Value-Prediction/blob/main/Pictures/Crossvalidation%20Model%202.png">
 </p>
 <p align='justify' style="font-weight: bold;">
 After adding and removing certain features, the MAPE of random forest regressor is increased by little, but still comparable to the model before (14.58%).
@@ -82,7 +82,7 @@ After adding and removing certain features, the MAPE of random forest regressor 
 
 #### Predicting Test Data
 <p align="center">
-<img src="https://github.com/PurwadhikaDev/AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject/blob/main/Pictures/Model%202%20Test%20Evaluation.png">
+<img src="https://github.com/b1llywitant0/Philadelphia-Property-Value-Prediction/blob/main/Pictures/Model%202%20Test%20Evaluation.png">
 </p>
 <p align='justify' style="font-weight: bold;">
 From the result above, based on the MAPE value, the feature engineering didn't improve the model (13.35%). However, it's important to note that in this step, we dropped building code description with more than 400 unique values (that probably explain why the previous model better than this one). But since the difference is only 0.17%, we can say that there's no change in the quality of the model. However, it is also important to note that the goodness of fit of this model is better than the previous model, it is more representable to the test data. Also, there is a reduction in MSE that probably because improvement in the features used reducing the effect of outliers.
@@ -93,7 +93,7 @@ From the result above, based on the MAPE value, the feature engineering didn't i
 1. Since the data are enormous, the process of random forest regression was taking too much time. When trying to improve the model with hyperparameter tuning, our computational power are not enough. Our suggestion for this problem is whether to explore other unconvential model that may work faster with comparable performance with random forest or use device with more computational power.
 </p>
 <p align="center">
-<img src="https://github.com/PurwadhikaDev/AlphaEngineer_JC_DS_FT_BSD_JKT_15_FinalProject/blob/main/Pictures/Random%20Forest.JPG">
+<img src="https://github.com/b1llywitant0/Philadelphia-Property-Value-Prediction/blob/main/Pictures/Random%20Forest.JPG">
 </p>
 <p align='justify' style="font-weight: bold;">
 2. Our model can only predict market values of properties in range of 6800-1.4799*1e8, with range of numerical values: a.) Total livable area: 0 - 798189; b.) Total area: 600 - 99964; c.) Number stories: 0 - 40; d.) Number rooms: 0 - 154; e.) Number bedrooms: 0 - 93; f.) Number bathrooms: 0 - 84; g.) Year built: 1652 - 2020; h.) Sale year: 1918 - 2020.  
